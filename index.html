@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app = "notesApp" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes Application</title>
+    <script src="angular.min.js"></script>
+    <script src="notes.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+	<div ng-controller="HelloController">
+		Your Name: <input ng-model="name">
+		<button ng-click="update()">update</button>
+		<p>{{greeting}}</p>
+	</div>
+</body>
+</html>
