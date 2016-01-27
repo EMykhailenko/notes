@@ -7,11 +7,9 @@
     <script src="notes.js"></script>
     <link rel="stylesheet" href="styles.css"/>
 </head>
-<body>
-	<div ng-controller="HelloController">
-		Your Name: <input ng-model="name">
-		<button ng-click="update()">update</button>
-		<p>{{greeting}}</p>
+<body ng-controller="NotesController">
+	<div ng-repeat="note in notes">
+		<p class="note">{{note.text}}</p>
 	</div>
 </body>
 </html>
